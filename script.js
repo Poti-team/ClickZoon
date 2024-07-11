@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
             vector.addEventListener("click", onVectorClick, { once: true });
         });
 
-        timeLeft = 20;
+        timeLeft = 15;
         timer = setInterval(() => {
             timeLeft--;
             updateText();

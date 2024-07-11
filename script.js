@@ -71,21 +71,18 @@ document.addEventListener("DOMContentLoaded", () => {
         roundText.textContent = `Round: ${currentRound + 1}`;
     };
     function playMusic(round) {
-        // Pausar todas as músicas
         music1.pause();
         music2.pause();
         music3.pause();
         music4.pause();
         resumo.pause()
         
-        // Resetar o tempo das músicas para o início
         music1.currentTime = 0;
         music2.currentTime = 0;
         music3.currentTime = 0;
         music4.currentTime = 0;
         resumo.currentTime = 0;
     
-        // Tocar a música correspondente ao round
         switch(round) {
             case 1:
                 music1.play();

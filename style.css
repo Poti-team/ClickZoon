@@ -8,12 +8,26 @@
    
 }
 .r1, .r2, .r3, .r4{
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: hidden; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover
+}
+.r1{
+    background-image: url("images/r1/background-r1.png");
+}
+.r2{
+    background-image: url("images/r2/background-r2.png");
 }
 .r3{
     background-color: #907063;
+    background-image: url("images/r3/background-r3.png")
+}
+.r4{
+    background-image: url("images/r4/backgroundr4.png");
 }
 .r2, .r3, .r4{
     display: none;
@@ -130,4 +144,16 @@ main{
     flex-direction: column;
     gap: 1em;
     color: white
+}
+button{
+    width: 100%;
+    font-size: 1em;
+    padding: .5em .2em;
+    border-radius: 5px;
+    border: none;
+    background-color: #243664;
+    color: white;
+}
+.txt{
+    color: white;
 }
